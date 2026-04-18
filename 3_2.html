@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>login form</title>
+    </head>
+    <body>
+        <form action="/login-endpoint" method="POST">
+            <h2>Login</h2>
+            <div class="form-group"></div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>  
+            <div class="form-group"></div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="button-group"></div>
+            <button type="submit">Login</button>
+            <button type="button" onclick="window.location.href='/'">Cancel</button>
+        </form>
+    </body>
+</html>
