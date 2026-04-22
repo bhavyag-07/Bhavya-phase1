@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Responsive Demo</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: white;
+    padding: 20px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header {
+    background: skyblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .nav {
+    background: darkgray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background: lightblue;
+    border-radius: 5px;
+  }
+  .nav a:hover {
+    background: skyblue;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px black;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .card h3 {
+    color: gray;
+    margin-bottom: 10px;
+  }
+  .card p {
+    color: grey;
+    line-height: 1.5;
+  }
+  .sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .sidebar h3 {
+    margin-bottom: 15px;
+    color: lightgray;
+  }
+  .sidebar ul {
+    list-style: none;
+  }
+  .sidebar li {
+    padding: 8px 0;
+    border-bottom: 1px solid white;
+  }
+  .footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  @media (min-width: 768px) {
+    body {
+      padding: 30px;
+    }
+    .nav ul {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+    .nav a {
+      padding: 10px 20px;
+    }
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .main-layout {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+  }
+  @media (min-width: 1024px) {
+    body {
+      padding: 40px;
+    }
+    .header {
+      padding: 30px;
+    }
+    .header h1 {
+      font-size: 2rem;
+    }
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .nav a {
+      padding: 12px 25px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Responsive Demo</h1>
+    <p>Resize your browser to see changes</p>
+  </div>
+  <div class="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="main-layout">
+    <div>
+      <div class="grid">
+        <div class="card">
+          <img src="https://consumer-voice.org/wp-content/uploads/2021/02/smartphone.png" alt="Sample">
+          <h3>mobile</h3>
+          <p> Beyond standard calls, mobile devices allowing for seamless remote work and quick decision-making.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.herzindagi.info/img-affiliate/2025/Jan/936550.webp" alt="Sample">
+          <h3>tablet</h3>
+          <p>Lightweight, thin, and easy to hold for long periods, with long battery life, perfect for travel.</p>
+        </div>
+        <div class="card">
+          <img src="https://www.elysedodge.com/cdn/shop/products/MatterhornDesktopPreview_530x@2x.jpg?v=1623130146" alt="Sample">
+          <h3>desktop</h3>
+          <p>Used for demanding tasks, including 3D modeling, software development, data analysis, and high-end video editing.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <ul>
+        <li>Responsive Design</li>
+        <li>Mobile First</li>
+        <li>Tablet Layout</li>
+        <li>Desktop Layout</li>
+        <li>Media Queries</li>
+        <li>Flexbox & Grid</li>
+      </ul>
+      <p style="margin-top: 15px; font-size: 14px;">On desktop, sidebar is on the right. On mobile, it moves below content.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2024 Responsive Demo | Works on all devices</p>
+  </div>
+</div>
+
+</body>
+</html>
