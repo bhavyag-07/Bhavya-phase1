@@ -5,48 +5,37 @@
   .demo-section {
     margin: 20px 0;
     padding: 20px;
-    background: #f8f9fa;
+    background: white;
     border-radius: 8px;
   }
-  
-  /* 1. BLOCK - Takes full width, starts new line */
   .block-demo {
     display: block;
     background: lightcoral;
     margin: 5px 0;
     padding: 10px;
   }
-  
-  /* 2. INLINE - Only takes content width, no height/margin top-bottom */
   .inline-demo {
     display: inline;
     background: lightgreen;
-    padding: 10px;  /* Padding works but may overlap */
-    margin: 20px;   /* Only left/right margin works */
+    padding: 10px; 
+    margin: 20px; 
   }
-  
-  /* 3. INLINE-BLOCK - Best of both worlds */
   .inline-block-demo {
     display: inline-block;
     background: lightblue;
     padding: 10px;
     margin: 10px;
-    width: 150px;   /* Can set width/height */
+    width: 150px;
   }
-  
-  /* 4. NONE - Element hidden, takes no space */
   .none-demo {
     display: none;
   }
-  
-  /* 5. FLEX - Powerful layout system */
   .flex-demo {
     display: flex;
     gap: 20px;
     background: #dee2e6;
     padding: 20px;
-  }
-  
+  } 
   .flex-item {
     background: #4a90e2;
     color: white;
@@ -54,8 +43,6 @@
     text-align: center;
     flex: 1;
   }
-  
-  /* 6. GRID - 2D layout system */
   .grid-demo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -73,13 +60,11 @@
 </style>
 </head>
 <body>
-
 <h2>1. Display: Block</h2>
 <div class="demo-section">
   <div class="block-demo">Block element - takes full width</div>
   <div class="block-demo">Another block - starts on new line</div>
 </div>
-
 <h2>2. Display: Inline</h2>
 <div class="demo-section">
   <span class="inline-demo">Inline 1</span>
@@ -87,28 +72,24 @@
   <span class="inline-demo">Inline 3</span>
   <p>Notice: No line breaks, width limited to content, margin top/bottom ignored</p>
 </div>
-
 <h2>3. Display: Inline-Block</h2>
 <div class="demo-section">
   <div class="inline-block-demo">Box 1<br>Width:150px</div>
   <div class="inline-block-demo">Box 2<br>Height respected</div>
   <div class="inline-block-demo">Box 3<br>Sits inline</div>
 </div>
-
 <h2>4. Display: None (Hidden Element)</h2>
 <div class="demo-section">
   <div>This text is visible</div>
   <div class="none-demo">This text is HIDDEN - takes no space</div>
   <div>This text is also visible</div>
 </div>
-
 <h2>5. Display: Flex</h2>
 <div class="flex-demo">
   <div class="flex-item">Flex Item 1</div>
   <div class="flex-item">Flex Item 2</div>
   <div class="flex-item">Flex Item 3</div>
 </div>
-
 <h2>6. Display: Grid</h2>
 <div class="grid-demo">
   <div class="grid-item">1</div>
@@ -118,6 +99,5 @@
   <div class="grid-item">5</div>
   <div class="grid-item">6</div>
 </div>
-
 </body>
 </html>
