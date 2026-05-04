@@ -1,0 +1,18 @@
+.box1 {
+    padding:20px;
+    border:2px solid black;
+    background-color: lightblue;
+}
+
+.box2 {
+    margin:20px;
+    border:2px solid black;
+    background-color:lightblue;
+}
+
+.box3 {
+    margin:20px;
+    padding:20px;
+    border:2px solid black;
+    background-color:lightblue;
+}
